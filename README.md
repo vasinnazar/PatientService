@@ -1,1 +1,8 @@
-# UserEnquireResponse
+# CSVParser
+
+Сервис для парсинга и отображение данных csv файла.
+Файл - test.csv, лежит в каталоге сервиса ./CSVParser/test.csv.
+
+Файл необходимо загрузить на странице - /loader
+
+

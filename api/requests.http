@@ -1,0 +1,35 @@
+### create application
+POST http://localhost:8000/api/application
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "ivan",
+    "email": "ivanov@nsk.com",
+    "message": "need some answer"
+}
+
+### get applications
+GET http://localhost:8000/api/applications
+
+#### get applications via filter
+GET http://localhost:8000/api/applications?filter[status]=Active
+
+### get applications via filter
+GET http://localhost:8000/api/applications?filter[status]=Resolved
+
+### get applications via filter
+GET http://localhost:8000/api/applications?filter[date]=2023-09-17T07:44:52.000000Z
+
+
+#### update application
+PUT http://localhost:8000/api/application/1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "comment": "answer to user's request"
+}
+
+
+
