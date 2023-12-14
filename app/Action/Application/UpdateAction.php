@@ -7,8 +7,9 @@ use App\Repositories\ApplicationRepository;
 
 class UpdateAction
 {
-    // update application
-
+    /**
+     * update application
+     */
     public function update(
         Application           $application,
                               $attributes,

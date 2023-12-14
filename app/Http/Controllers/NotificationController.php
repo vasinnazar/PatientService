@@ -7,7 +7,9 @@ use App\Http\Requests\Notification\SendRequest;
 
 class NotificationController
 {
-    // send email action
+    /**
+     * send email action
+     */
     public function send(
         SendRequest $sendRequest,
         UpdateAction $updateAction

@@ -16,7 +16,7 @@ class Application extends Model
     public static function boot()
     {
         parent::boot();
-echo 'tttt';
+
         self::updating( function ($item) {
             resolve(UpdateAction::class)->action($item);
         });

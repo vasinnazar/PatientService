@@ -7,7 +7,9 @@ use Spatie\QueryBuilder\Filters\Filter;
 
 class StatusFilter implements Filter
 {
-    //filter via status
+    /**
+     * filter via status
+     */
     public function __invoke(Builder $query, $value, $property = null) : Builder
     {
         return $query->where('status' ,  $value);

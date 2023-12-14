@@ -8,7 +8,9 @@ use Illuminate\Support\Facades\Mail;
 
 class UpdateAction
 {
-    // send email
+    /**
+     * send email
+     */
     public function action( $attributes )
     {
         try {

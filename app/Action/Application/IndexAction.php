@@ -6,7 +6,9 @@ use App\Repositories\ApplicationRepository;
 
 class IndexAction
 {
-    // get appplications
+    /**
+     * get appplications
+     */
     public function action(
         ApplicationRepository $applicationRepository
     )

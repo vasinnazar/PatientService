@@ -6,7 +6,9 @@ use App\Repositories\ApplicationRepository;
 
 class CreateAction
 {
-    // create new application
+    /**
+     * create new application
+     */
     public function action(
         $attributes,
         ApplicationRepository $applicationRepository)

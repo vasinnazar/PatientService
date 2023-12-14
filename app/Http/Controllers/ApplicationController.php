@@ -12,7 +12,9 @@ use App\Repositories\ApplicationRepository;
 
 class ApplicationController
 {
-    // get applications action
+    /**
+     * get applications action
+     */
     public function index(
         IndexAction           $indexAction,
         ApplicationRepository $applicationRepository
@@ -21,7 +23,9 @@ class ApplicationController
         return $indexAction->action($applicationRepository);
     }
 
-    // create application action
+    /**
+     * create application action
+     */
 
     public function create(
         CreateAction          $createAction,
@@ -32,7 +36,9 @@ class ApplicationController
         return $createAction->action($createRequest, $applicationRepository);
     }
 
-    //update application action
+    /**
+     * update application action
+     */
 
     public function update(
         Application           $application,
